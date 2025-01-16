@@ -29,7 +29,7 @@ def main():
             ix2 = stoi[ch2]
             N[ix1, ix2] += 1
 
-    # show_bigrams(N, itos, figsize=(16, 16))
+    show_bigrams(N, itos, figsize=(16, 16))
 
     # Normalize the matrix by rows (we add a count of n so that no element is zero)
     P = (N + 1).float()
